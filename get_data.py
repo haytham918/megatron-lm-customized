@@ -1,0 +1,5 @@
+from datasets import load_dataset
+
+train_data = load_dataset("wikitext", "wikitext-103-raw-v1", split="train")
+train_data.to_json("wikitext.json", lines=True)
+
